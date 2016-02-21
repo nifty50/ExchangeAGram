@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		5B07A1711C7A5B4300A3801D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07A1701C7A5B4300A3801D /* AppDelegate.swift */; };
-		5B07A1731C7A5B4300A3801D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07A1721C7A5B4300A3801D /* ViewController.swift */; };
 		5B07A1761C7A5B4300A3801D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B07A1741C7A5B4300A3801D /* Main.storyboard */; };
 		5B07A1791C7A5B4300A3801D /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B07A1771C7A5B4300A3801D /* ExchangeAGram.xcdatamodeld */; };
 		5B07A17B1C7A5B4300A3801D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B07A17A1C7A5B4300A3801D /* Assets.xcassets */; };
 		5B07A17E1C7A5B4300A3801D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B07A17C1C7A5B4300A3801D /* LaunchScreen.storyboard */; };
 		5B07A1891C7A5B4300A3801D /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07A1881C7A5B4300A3801D /* ExchangeAGramTests.swift */; };
 		5B07A1941C7A5B4300A3801D /* ExchangeAGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07A1931C7A5B4300A3801D /* ExchangeAGramUITests.swift */; };
+		5BD1E3791C7A5EC400578F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */; };
+		5BD1E37B1C7A629C00578F3E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E37A1C7A629C00578F3E /* FeedCell.swift */; };
+		5BD1E37D1C7A648300578F3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD1E37C1C7A648300578F3E /* MobileCoreServices.framework */; };
+		5BD1E3811C7A6CF500578F3E /* FeedItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E37F1C7A6CF500578F3E /* FeedItem+CoreDataProperties.swift */; };
+		5BD1E3821C7A6CF500578F3E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E3801C7A6CF500578F3E /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 /* Begin PBXFileReference section */
 		5B07A16D1C7A5B4300A3801D /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B07A1701C7A5B4300A3801D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B07A1721C7A5B4300A3801D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B07A1751C7A5B4300A3801D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B07A1781C7A5B4300A3801D /* ExchangeAGram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeAGram.xcdatamodel; sourceTree = "<group>"; };
 		5B07A17A1C7A5B4300A3801D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		5B07A18F1C7A5B4300A3801D /* ExchangeAGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B07A1931C7A5B4300A3801D /* ExchangeAGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramUITests.swift; sourceTree = "<group>"; };
 		5B07A1951C7A5B4300A3801D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		5BD1E37A1C7A629C00578F3E /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		5BD1E37C1C7A648300578F3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5BD1E37F1C7A6CF500578F3E /* FeedItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FeedItem+CoreDataProperties.swift"; path = "../FeedItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5BD1E3801C7A6CF500578F3E /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD1E37D1C7A648300578F3E /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +109,15 @@
 			isa = PBXGroup;
 			children = (
 				5B07A1701C7A5B4300A3801D /* AppDelegate.swift */,
-				5B07A1721C7A5B4300A3801D /* ViewController.swift */,
+				5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */,
+				5BD1E37A1C7A629C00578F3E /* FeedCell.swift */,
 				5B07A1741C7A5B4300A3801D /* Main.storyboard */,
 				5B07A17A1C7A5B4300A3801D /* Assets.xcassets */,
 				5B07A17C1C7A5B4300A3801D /* LaunchScreen.storyboard */,
-				5B07A17F1C7A5B4300A3801D /* Info.plist */,
 				5B07A1771C7A5B4300A3801D /* ExchangeAGram.xcdatamodeld */,
+				5BD1E37F1C7A6CF500578F3E /* FeedItem+CoreDataProperties.swift */,
+				5BD1E3801C7A6CF500578F3E /* FeedItem.swift */,
+				5BD1E37E1C7A66F800578F3E /* Supporting Files */,
 			);
 			path = ExchangeAGram;
 			sourceTree = "<group>";
@@ -126,6 +138,15 @@
 				5B07A1951C7A5B4300A3801D /* Info.plist */,
 			);
 			path = ExchangeAGramUITests;
+			sourceTree = "<group>";
+		};
+		5BD1E37E1C7A66F800578F3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BD1E37C1C7A648300578F3E /* MobileCoreServices.framework */,
+				5B07A17F1C7A5B4300A3801D /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B07A1791C7A5B4300A3801D /* ExchangeAGram.xcdatamodeld in Sources */,
-				5B07A1731C7A5B4300A3801D /* ViewController.swift in Sources */,
+				5BD1E3811C7A6CF500578F3E /* FeedItem+CoreDataProperties.swift in Sources */,
+				5BD1E3821C7A6CF500578F3E /* FeedItem.swift in Sources */,
+				5BD1E37B1C7A629C00578F3E /* FeedCell.swift in Sources */,
+				5BD1E3791C7A5EC400578F3E /* FeedViewController.swift in Sources */,
 				5B07A1711C7A5B4300A3801D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +512,7 @@
 				5B07A19A1C7A5B4300A3801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B07A19B1C7A5B4300A3801D /* Build configuration list for PBXNativeTarget "ExchangeAGramTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +521,7 @@
 				5B07A19D1C7A5B4300A3801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B07A19E1C7A5B4300A3801D /* Build configuration list for PBXNativeTarget "ExchangeAGramUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +530,7 @@
 				5B07A1A01C7A5B4300A3801D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
