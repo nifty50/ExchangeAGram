@@ -16,5 +16,6 @@ extension FeedItem {
 
     @NSManaged var caption: String?
     @NSManaged var image: NSData?
+    @NSManaged var thumbnail: NSData?
 
 }
