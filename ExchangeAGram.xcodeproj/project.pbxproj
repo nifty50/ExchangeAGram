@@ -18,6 +18,7 @@
 		5BAB0D451C7A8F1800F21D1D /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB0D441C7A8F1800F21D1D /* FilterCell.swift */; };
 		5BAB0D481C7AC80A00F21D1D /* FeedItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB0D461C7AC80A00F21D1D /* FeedItem+CoreDataProperties.swift */; };
 		5BAB0D491C7AC80A00F21D1D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB0D471C7AC80A00F21D1D /* FeedItem.swift */; };
+		5BCCAF9F1C7ADBEE0083109E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCCAF9E1C7ADBEE0083109E /* ProfileViewController.swift */; };
 		5BD1E3791C7A5EC400578F3E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */; };
 		5BD1E37B1C7A629C00578F3E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E37A1C7A629C00578F3E /* FeedCell.swift */; };
 		5BD1E37D1C7A648300578F3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD1E37C1C7A648300578F3E /* MobileCoreServices.framework */; };
@@ -58,6 +59,7 @@
 		5BAB0D441C7A8F1800F21D1D /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		5BAB0D461C7AC80A00F21D1D /* FeedItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FeedItem+CoreDataProperties.swift"; path = "../FeedItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5BAB0D471C7AC80A00F21D1D /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
+		5BCCAF9E1C7ADBEE0083109E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5BD1E37A1C7A629C00578F3E /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		5BD1E37C1C7A648300578F3E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 				5B07A1701C7A5B4300A3801D /* AppDelegate.swift */,
 				5BD1E3781C7A5EC400578F3E /* FeedViewController.swift */,
 				5BAB0D421C7A8B0900F21D1D /* FilterViewController.swift */,
+				5BCCAF9E1C7ADBEE0083109E /* ProfileViewController.swift */,
 				5BD1E37A1C7A629C00578F3E /* FeedCell.swift */,
 				5BAB0D441C7A8F1800F21D1D /* FilterCell.swift */,
 				5B07A1741C7A5B4300A3801D /* Main.storyboard */,
@@ -300,6 +303,7 @@
 				5B07A1791C7A5B4300A3801D /* ExchangeAGram.xcdatamodeld in Sources */,
 				5BAB0D491C7AC80A00F21D1D /* FeedItem.swift in Sources */,
 				5BD1E37B1C7A629C00578F3E /* FeedCell.swift in Sources */,
+				5BCCAF9F1C7ADBEE0083109E /* ProfileViewController.swift in Sources */,
 				5BD1E3791C7A5EC400578F3E /* FeedViewController.swift in Sources */,
 				5B07A1711C7A5B4300A3801D /* AppDelegate.swift in Sources */,
 			);
