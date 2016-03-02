@@ -2,7 +2,7 @@
 //  FeedItem.swift
 //  ExchangeAGram
 //
-//  Created by Ansel Adams on 2/21/16.
+//  Created by Ansel Adams on 3/1/16.
 //  Copyright © 2016 Ansel Adams. All rights reserved.
 //
 

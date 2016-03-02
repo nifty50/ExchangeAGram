@@ -23,6 +23,9 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let backgroundImage = UIImage(named: "AutumnBackground")
+        self.view.backgroundColor = UIColor(patternImage: backgroundImage!)
+        
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -102,6 +105,13 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedItem.image = imageData
         feedItem.caption = "test caption"
         feedItem.thumbnail = thumbnailData
+        feedItem.latitude = locationManager.location?.coordinate.latitude
+        feedItem.longitude = locationManager.location?.coordinate.longitude
+        
+        let uuid = NSUUID().UUIDString
+        feedItem.uniqueID = uuid
+        
+        feedItem.filtered = false
         
         (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
         
@@ -126,7 +136,13 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         let cell: FeedCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! FeedCell
         let thisItem = feedArray[indexPath.row] as! FeedItem
         
-        cell.imageView.image = UIImage(data: thisItem.image!)
+        if thisItem.filtered == true {
+            let returnedImage = UIImage(data: thisItem.image!)
+            let image = UIImage(CGImage: (returnedImage?.CGImage)!, scale: 1.0, orientation: UIImageOrientation.Right)
+            //cell.imageView.image = UIImage(data: image)
+        } else {
+            cell.imageView.image = UIImage(data: thisItem.image!)
+        }
         cell.captionLabel.text = thisItem.caption
         
         return cell
