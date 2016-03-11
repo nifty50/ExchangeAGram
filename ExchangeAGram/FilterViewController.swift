@@ -212,11 +212,11 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         var image: UIImage
         
         if NSFileManager.defaultManager().fileExistsAtPath(uniquePath.path!) {
-            var returnedImage = UIImage(contentsOfFile: uniquePath.path!)!
+            let returnedImage = UIImage(contentsOfFile: uniquePath.path!)!
             image = UIImage(CGImage: returnedImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.Right)
         } else {
             self.cacheImage(imageNumber)
-            var returnedImage = UIImage(contentsOfFile: uniquePath.path!)!
+            let returnedImage = UIImage(contentsOfFile: uniquePath.path!)!
             image = UIImage(CGImage: returnedImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.Right)
         }
         

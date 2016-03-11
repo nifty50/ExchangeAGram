@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed View Controller-->
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vPc-Fg-CB5">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vPc-Fg-CB5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5nJ-Kb-0nQ">
@@ -59,6 +60,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vPc-Fg-CB5" secondAttribute="trailing" constant="-20" id="387-hI-cNZ"/>
+                            <constraint firstItem="vPc-Fg-CB5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="Upu-lQ-ldD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vPc-Fg-CB5" secondAttribute="bottom" id="a0y-fp-VNV"/>
+                            <constraint firstItem="vPc-Fg-CB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fIA-wq-LuI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RlM-AD-4qR">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="pXb-0H-Q5Q">
@@ -93,22 +100,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlaceHolderImage" translatesAutoresizingMaskIntoConstraints="NO" id="qRH-EG-MLy">
-                                <rect key="frame" x="16" y="72" width="100" height="100"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolderImage" translatesAutoresizingMaskIntoConstraints="NO" id="qRH-EG-MLy">
+                                <rect key="frame" x="20" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UCW-55-T6n"/>
+                                    <constraint firstAttribute="height" constant="100" id="lea-po-Le0"/>
+                                </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADn-Wi-wC3">
-                                <rect key="frame" x="16" y="180" width="185" height="45"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADn-Wi-wC3">
+                                <rect key="frame" x="20" y="180" width="185" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="Tgk-SJ-Et4"/>
+                                    <constraint firstAttribute="height" constant="45" id="e0n-st-aD6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-nV-3Ki" customClass="FBLoginView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-nV-3Ki" customClass="FBLoginView">
                                 <rect key="frame" x="176" y="273" width="248" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="I6l-eh-QPN"/>
+                                    <constraint firstAttribute="width" constant="248" id="bCG-o8-7nA"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-kH-VUI">
-                                <rect key="frame" x="455" y="86" width="129" height="102"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-kH-VUI">
+                                <rect key="frame" x="451" y="86" width="129" height="102"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="YcI-j8-MzB"/>
+                                    <constraint firstAttribute="width" constant="129" id="ic8-CR-pod"/>
+                                </constraints>
                                 <state key="normal" image="MapIcon"/>
                                 <connections>
                                     <action selector="mapViewButtonTapped:" destination="7YY-s6-3kr" eventType="touchUpInside" id="33p-1l-xEy"/>
@@ -116,6 +139,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qRH-EG-MLy" firstAttribute="top" secondItem="JUZ-SL-ecT" secondAttribute="topMargin" constant="72" id="O8y-sq-6n2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VsB-kH-VUI" secondAttribute="trailing" id="Qd7-NV-xYv"/>
+                            <constraint firstItem="ADn-Wi-wC3" firstAttribute="top" secondItem="qRH-EG-MLy" secondAttribute="bottom" constant="8" id="bgw-UO-9Jw"/>
+                            <constraint firstItem="Ltk-nV-3Ki" firstAttribute="centerY" secondItem="JUZ-SL-ecT" secondAttribute="centerY" id="fhR-YP-6Qm"/>
+                            <constraint firstItem="qRH-EG-MLy" firstAttribute="leading" secondItem="JUZ-SL-ecT" secondAttribute="leadingMargin" id="jU1-eI-Gk4"/>
+                            <constraint firstItem="Ltk-nV-3Ki" firstAttribute="centerX" secondItem="JUZ-SL-ecT" secondAttribute="centerX" id="rO9-B5-wSK"/>
+                            <constraint firstItem="ADn-Wi-wC3" firstAttribute="leading" secondItem="JUZ-SL-ecT" secondAttribute="leadingMargin" id="wsh-ja-Ixs"/>
+                            <constraint firstItem="VsB-kH-VUI" firstAttribute="top" secondItem="JUZ-SL-ecT" secondAttribute="topMargin" constant="86" id="yMn-r8-w5O"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="Ltk-nV-3Ki" id="dpB-bA-S7G"/>
@@ -140,11 +173,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="19S-0P-UeN">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="19S-0P-UeN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="19S-0P-UeN" firstAttribute="leading" secondItem="epW-84-VAJ" secondAttribute="leadingMargin" constant="-20" id="P6w-gT-pz0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19S-0P-UeN" secondAttribute="trailing" constant="-20" id="gOV-zG-Hem"/>
+                            <constraint firstItem="19S-0P-UeN" firstAttribute="top" secondItem="j0O-CW-RPb" secondAttribute="bottom" constant="-64" id="lxb-qj-77D"/>
+                            <constraint firstItem="XhQ-rI-LTY" firstAttribute="top" secondItem="19S-0P-UeN" secondAttribute="bottom" id="scB-Uf-yr3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="19S-0P-UeN" id="Ua6-Xa-SKW"/>
